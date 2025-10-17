@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\CategoryController;
 use App\Http\Controllers\HabitController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
@@ -10,3 +11,4 @@ Route::get('/user', function (Request $request) {
 
 
 Route::post('/create-habit', [HabitController::class, "create"]);
+Route::post('/create-category', [CategoryController::class, "create"]);
